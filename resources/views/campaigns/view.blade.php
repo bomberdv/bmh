@@ -81,12 +81,8 @@
 
 @section('content')
 
-<div class="jumbotron md index-header jumbotron_set jumbotron-cover">
-      <div class="container wrap-jumbotron position-relative">
-      </div>
-    </div>
 
-<div class="container margin-bottom-40 padding-top-40">
+<div class="container  margin-bottom-40 margin-top-30 padding-top-40">
 
 	@if (session()->has('donation_cancel'))
 	<div class="alert alert-danger text-center btn-block margin-bottom-20  custom-rounded" role="alert">
@@ -110,18 +106,18 @@
 
 
 <!-- Col MD -->
-<div class="col-md-8 margin-bottom-20">
+<div class="col-md-8 login-form-2 margin-bottom-20">
 
 	<div class="text-center margin-bottom-20">
 		<img class="img-responsive img-rounded" style="display: inline-block;" src="{{url('public/campaigns/large',$response->large_image)}}" />
 </div>
 
-<h1 class="font-default title-image none-overflow margin-bottom-20">
+<h1 class="font-default subtitle-color-12 title-image none-overflow text-uppercase">
 	 		{{ $response->title }}
 		</h1>
 
 		<h4 class="font-default title-image">
-			<b>Lokasi: {{ $city->nama }}, {{ $province->nama }}</b>
+			<P class="subtitle-color-11">WILAYAH : {{ $city->nama }},</b>
 		</h4>
 
 		<hr />
