@@ -10,16 +10,12 @@ $banks = \App\Models\Banks::all();
 @section('title') {{ trans('users.account_settings') }} - @endsection
 
 @section('content')
-<div class="jumbotron md index-header jumbotron_set jumbotron-cover">
-	<div class="container wrap-jumbotron position-relative">
-		<h2 class="title-site">{{ trans('users.account_settings') }}</h2>
-	</div>
-</div>
 
-<div class="container margin-bottom-40">
 
+<div class="container margin-top-90 margin-bottom-40">
+ <h2 class="subtitle-color-7 text-uppercase">tambah saldo</h2>
 	<!-- Col MD -->
-	<div class="col-md-8 margin-bottom-20">
+	<div class="login-form-2 col-md-8 margin-bottom-20">
 
 		@if (session('notification'))
 		<div class="alert alert-success btn-sm alert-fonts" role="alert">
@@ -37,7 +33,7 @@ $banks = \App\Models\Banks::all();
 			<input type="hidden" name="_id" value="{{ $response }}">
 
 			<div class="form-group">
-				<label>Pilih Nominal Top Up</label>
+				<label>Pilih Nominal Saldo</label>
 				<select name="amount" class="form-control input-lg" >
 					<option value="">Pilih Nominal Top Up</option>
 					<option value="50000">Rp.50,000</option>
